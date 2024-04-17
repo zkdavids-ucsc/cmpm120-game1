@@ -1,0 +1,172 @@
+{
+    "Title": "Lunch Money",
+    "Credits": "Created by Zeke Davidson",
+    "InitialLocation": "Home",
+    "Locations": {
+        "Home": {
+            "Body": "You're at home, and out of money. Better look around for some money to buy food.",
+            "Choices": [
+                {
+                    "Text": "Grocery Store",
+                    "Target": "GroceryStore"
+                },
+                {
+                    "Text": "Go to Campus",
+                    "Target": "Campus"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Check the couch",
+                    "InteractTarget": "Home",
+                    "InteractText": "Your couch savings have been run dry and transferred to your pocket already."
+                }
+            ]
+        },
+        "GroceryStore": {
+            "Body": "At the grocery store, there are quite a few items you can buy, for a price.",
+            "Choices": [
+                {
+                    "Text": "Go Home",
+                    "Target": "Home"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Buy something at the grocery store",
+                    "InteractTarget": "GroceryStore",
+                    "InteractText": "You checked the grocery store, but unfortunately there aren't any options for the money you have."
+                }
+            ]
+        },
+        "Campus": {
+            "Body": "You're at campus, there are a multitude of locations to go to.",
+            "Choices": [
+                {
+                    "Text": "Go Home",
+                    "Target": "Home"
+                },
+                {
+                    "Text": "Cafeteria",
+                    "Target": "Cafeteria"
+                },
+                {
+                    "Text": "Cafe",
+                    "Target": "Cafe" 
+                },
+                {
+                    "Text": "Bookstore",
+                    "Target": "Bookstore" 
+                },
+                {
+                    "Text": "Library",
+                    "Target": "Library"
+                },
+                {
+                    "Text": "Classroom Building",
+                    "Target": "Classroom"
+                }
+            ]
+        },
+        "Cafeteria": {
+            "Body": "You're at the Cafeteria, you could get all you can eat if you had some money.",
+            "Choices": [
+                {
+                    "Text": "Campus",
+                    "Target": "Campus"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Check the what you can buy",
+                    "InteractTarget": "Cafeteria",
+                    "InteractText": "You checked the cafeteria. It costs $14 to get into the dining hall. Quite the steep price."
+                }
+            ]
+        },
+        "Cafe": {
+            "Body": "You're at the Cafe, you could get something to eat if you had some money.",
+            "Choices": [
+                {
+                    "Text": "Campus",
+                    "Target": "Campus"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Check the cafe",
+                    "InteractTarget": "Cafe",
+                    "InteractText": "You checked the cafe. The cheapest item is an espresso for $2.95"
+                }
+            ]
+        },
+        "Bookstore": {
+            "Body": "You're at the Bookstore, and you suddenly remember you have a job here.",
+            "Choices": [
+                {
+                    "Text": "Campus",
+                    "Target": "Campus"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Work at the bookstore",
+                    "InteractTarget": "Bookstore",
+                    "InteractText": "\"Thanks for working today! We'll send you your paycheck in two weeks.\" Darn. Still no money for lunch."
+                }
+            ]
+        },
+        "Library": {
+            "Body": "You're at the Library, your friends are here.",
+            "Choices": [
+                {
+                    "Text": "Campus",
+                    "Target": "Campus"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Ask your friends for money",
+                    "InteractTarget": "Library",
+                    "InteractText": "\"Sorry, I gave you the last of what I have.\""
+                }
+            ]
+        },
+        "Classroom": {
+            "Body": "You're at the Classroom Building, your friends are here.",
+            "Choices": [
+                {
+                    "Text": "Campus",
+                    "Target": "Campus"
+                },
+                {
+                    "Text": "Vending Machine",
+                    "Target": "VendingMachine"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Pester your friends for money",
+                    "InteractTarget": "Classroom",
+                    "InteractText": "\"Sorry, I don't have any more money.\""
+                }
+            ]
+        },
+        "VendingMachine": {
+            "Body": "You're in front of the Vending Machine, maybe you can buy something.",
+            "Choices": [
+                {
+                    "Text": "Classroom Building",
+                    "Target": "Classroom"
+                }
+            ],
+            "Interact": [
+                {
+                    "InteractOption": "Buy something from the vending machine",
+                    "InteractTarget": "VendingMachine",
+                    "InteractText": "You can buy some soda or chips if you had at least $1.50."
+                }
+            ]
+        }
+    }
+}
